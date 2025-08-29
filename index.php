@@ -18,7 +18,7 @@ $paquetes = $conexion->query("");
     <div class="">
         <h1>Perfil Personal</h1>
         <p class="parrafo">Ingeniera en Programacion</p>
-        <img src="./logo.jpg" alt="imagen prinipa">
+        <img src="./logo.jpg" alt="imagen prinipal">
     </div>
 </body>
 </html>
