@@ -14,11 +14,10 @@ $paquetes = $conexion->query("");
     <title>Agencia de viajes</title>
 </head>
 <body>
-    
-    <div class="">
-        <h1>Perfil Personal</h1>
-        <p class="parrafo">Ingeniera en Programacion</p>
-        <img src="./logo.jpg" alt="imagen prinipal">
-    </div>
+    <?php
+        foreach($paquetes as $paquetes){
+            echo $paquetes['nombre'];
+        }
+    ?>
 </body>
 </html>
