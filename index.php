@@ -1,75 +1,95 @@
-<?php
-require_once 'componentes/conexion.php';
-
-$paquetes = $conexion->query(query: "SELECT* FROM agencia.paquetes WHERE paquetes.estado = 'disponible';");
-
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia de viajes</title>
-</head>
-<body>
-    <div class="row row.cols-2 row-cols-md-3 g-3">
-        <?php foreach($paquetes as $paquetes){ ?>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <d class="flex flex-column">
-                    <div class="card">
-                        <div class="card-title">
-                            <h3><?=$paquetes['nombre']?></h3>
-                    </div>
-                     <div class="card-body">
-                        <img class="card-img-top" scr="<?=$paquetes['url_imagen'] ?>" alt="">
-                        <p><?= $paquetes['descripcion_galeria']?></p>
-                     </div>
-                    <div class="card-foter"></div>
-                </d>
-            </div>
-    </div>
-    <?php } ?>
+    <title>JM Agencia de Viajes</title>
     <style>
-        h1 {
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+            margin: 0;
+            padding: 0;
             text-align: center;
-            color: rgb(149, 100, 196);
         }
-        
-    </style>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa de Viajes</title>
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 15px 40px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            height: 70px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            font-size: 22px;
+            color: #b46c3f;
+            margin: 0;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        main h2 {
+            color: #333;
+            font-size: 26px;
+        }
+
+        main p {
+            font-size: 18px;
+            color: #555;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #b46c3f;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #8b512e;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-      
-</body>
 
+    <header>
+        <img src="./logo.jpg" alt="Logo JM Viajes">
+        <h1>JM Agencia de Viajes</h1>
+    </header>
 
-<body>
-        <h1>Empresa de Viajes</h1>
-        <h5></h5>
-        <p class="parrafo"></span> Somos JM VIAJES.Una Empresa encargada de conseguir los MEJORES VIAJES para usted.</p>     
+    <main>
+        <h2>Somos JM Viajes</h2>
+        <p>Una empresa encargada de conseguir los mejores viajes para vos. 
+        Ofrecemos experiencias únicas, destinos soñados y los precios más convenientes.</p>
 
-    <form action="">
-        <button type="submit">INICIAR</button>
-    </form>
+        <a href="inicio.php" class="boton">INICIAR</a>
+    </main>
 
-        <h5></h5>
-        <p class="parrafo"></span>Hace 10 Años que fue creada esta Empresa y Siempre le dimos la Seguridad de que va a tener UN VIAJE INOLVIDABLE</p>     
-   
-    <div class="container">
-        
-        <div>
-            <h2>DATOS PERSONALES</h2>
-            <ul>
-                <li class="subtitle">351-783-953</li>
-            </ul>
-        </div>
-    </div>
-
+    <footer>
+        © <?php echo date("Y"); ?> JM Agencia de Viajes - Todos los derechos reservados.
+    </footer>
 
 </body>
 </html>
