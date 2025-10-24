@@ -108,6 +108,9 @@
             text-decoration: none;
             font-size: 16px;
         }
+        p1{
+            background-color: #f00505ff;
+        }
     </style>
 </head>
 <body>
@@ -125,9 +128,9 @@
             <h3>New York</h3>
             <p>Noche Luminosa</p>
             <div class="precio">USD $890</div>
-            <p> Fecha salida: 12/12/2025</p>
+            <p>Fecha salida: 12/12/2025</p>
             <p>Fecha regreso: 05/01/2026</p>
-            <p>10% OFF por 15 dias</p>
+            <p1>10% OFF por 15 dias</p1>
              <a href="index.php" class="ver">ver paquete</a>
             
         </div>
@@ -137,6 +140,9 @@
             <h3>Bariloche</h3>
             <p>Fiesta Chocolatosa</p>
             <div class="precio">USD $600</div>
+            <p> Fecha salida: 1/02/2026</p>
+            <p>Fecha regreso: 15/02/2026</p>
+            <p1>10% OFF por 10 dias</p1>
             <a href="index.php" class="ver">ver paquete</a>
         </div>
 
@@ -145,6 +151,9 @@
             <h3>México</h3>
             <p>Mariachi Fest</p>
             <div class="precio">USD $756</div>
+            <p> Fecha salida: 12/12/2025</p>
+            <p>Fecha regreso: 05/01/2026</p>
+            <p1>10% OFF por 15 dias</p1>
             <a href="index.php" class="ver">ver paquete</a>
         </div>
 
@@ -153,6 +162,9 @@
             <h3>Italia</h3>
             <p>Risate Italiane</p>
             <div class="precio">USD $980</div>
+            <p> Fecha salida: 20/12/2025</p>
+            <p>Fecha regreso: 8/12/2025</p>
+            <p1>10% OFF por 12 dias</p1>
             <a href="index.php" class="ver">ver paquete</a>
         </div>
     </div>

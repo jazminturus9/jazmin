@@ -2,13 +2,10 @@
 $servidor = "localhost";
 $usuario = "root";
 $contraseña = "";
-$base = "agencia_viajes";
+$base_datos = "Turismo";
 
-//conxion propia ala bbdd
-$conexion = new mysqli($servidor, $usuario, $contraseña, $base);
+$conexion = new mysqli($servidor,$usuario,$contraseña,$base_datos);
 
-//c chequear la conexion
-
-if($conexion->connect_error){
-    die("Error de conexion: " . $conexion->connect_error);
+if ($conexion->connect_error){
+    die("Error de conexion:".$conexion->connect_error);
 }
