@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `agencia-`
 --
 
-CREATE TABLE `agencia-` (
+CREATE TABLE `paquetes` (
   `id_paquete` int(50) NOT NULL,
   `id_destino` date NOT NULL,
   `nombre` varchar(50) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE `agencia-` (
 --
 -- Indices de la tabla `agencia-`
 --
-ALTER TABLE `agencia-`
+ALTER TABLE `paquetes`
   ADD PRIMARY KEY (`id_paquete`),
   ADD KEY `id_destino` (`id_destino`);
 
@@ -57,7 +57,7 @@ ALTER TABLE `agencia-`
 --
 -- AUTO_INCREMENT de la tabla `agencia-`
 --
-ALTER TABLE `agencia-`
+ALTER TABLE `paquetes`
   MODIFY `id_paquete` int(50) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
